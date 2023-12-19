@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> calculator </title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="calculator"> 
+            <div class="visor">
+                <h1 id="num_visor"> </h1>     
+            </div>
+            <div class="teclado">
+                <button class="tecla" onclick="tecla_precionada(7)"> 7 </button>
+                <button class="tecla" onclick="tecla_precionada(8)"> 8 </button>
+                <button class="tecla" onclick="tecla_precionada(9)" > 9 </button>
+                <button class="tecla" onclick="tecla_precionada('/')"> / </button>   
+            </div>
+            <div class="teclado">
+                <button class="tecla" onclick="tecla_precionada(4)"> 4 </button>
+                <button class="tecla" onclick="tecla_precionada(5)"> 5 </button>
+                <button class="tecla" onclick="tecla_precionada(6)"> 6 </button>
+                <button class="tecla" onclick="tecla_precionada('*')"> * </button>   
+            </div>
+            <div class="teclado">
+                <button class="tecla" onclick="tecla_precionada(1)"> 1 </button>
+                <button class="tecla" onclick="tecla_precionada(2)"> 2 </button>
+                <button class="tecla" onclick="tecla_precionada(3)"> 3 </button>
+                <button class="tecla" onclick="tecla_precionada('-')"> - </button>   
+            </div>
+            <div class="teclado">
+                <button class="tecla" onclick="tecla_precionada('.')"> . </button>
+                <button class="tecla" onclick="tecla_precionada(0)"> 0 </button>
+                <button class="tecla" onclick="tecla_precionada('=')"> = </button>
+                <button class="tecla" onclick="tecla_precionada('+')"> + </button>   
+            </div>
+        </div>
+    </div>
+</body>
+</html>
