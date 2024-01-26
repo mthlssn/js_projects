@@ -3,52 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title> Task List </title>
 </head>
 <body>
-    
-    <header> 
+    <main>
+        <div class="forms"> 
 
-        <% if (task == null) { %> 
+            <% if (task == null) { %> 
+                <%- include('./components/form', {action: "create", value: ""}) %>
+            <% } else { %>
+                <%- include('./components/form', {action: "updateOne/" + task._id, value: task.task}) %>
+            <% } %>
+        </div>
 
-        <form action= "/create" method="post">
-            <input type="text" name="task" id="task" placeholder="Insira uma tarefa"> 
-            <button id="addButton" type="submit"> Adicionar</button>
-        </form>
-
-        <% } else { %>
-
-        <form action= "/updateOne/<%= task._id %>" method="post">
-            <input type="text" name="task" id="task" value="<%= task.task %>"> 
-            <button id="addButton" type="submit"> Atualizar </button>
-        </form>
-
-        <% } %>
-    </header>
-
-    <section id="task">
-        <ul>
+        <div class="tasks">
             <% taskList.forEach((task) => { %>
-                <li>
-                    <%= task.task %> | <%= task.date.toLocaleDateString('pt-BR') %>
+                <div class="task">
+                    <div class="container_text_task">
+                        <p class="data_task"> <%= task.date.toLocaleDateString('pt-BR') %> </p>
+                        <p class="nome_task"> <%= task.task %> </p>
+                    </div>
 
-                    <% if (taskDelete == null) { %>
-                        <a href="/getById/<%= task._id%>/update"> Editar </a>
-                        <a href="/getById/<%= task._id%>/delete"> Apagar </a>
-                    <% } else { %>
-                        <% if (taskDelete.id == task._id) { %>
-                            <a href="/deleteOne/<%= taskDelete._id%>"> SIM </a>
-                            <a href="/"> NÂO </a>
+                    <div class="container_botoes_task">
+                        <% if (taskDelete == null) { %>
+                            <a class="botoes" href="/getById/<%= task._id%>/update" > <i class="bi bi-pencil"></i> </a>
+                            <a class="botoes" href="/getById/<%= task._id%>/delete"> <i class="bi bi-x-lg"></i> </a>
                         <% } else { %>
-                            <a href="/getById/<%= task._id%>/update"> Editar </a>
-                            <a href="/getById/<%= task._id%>/delete"> Apagar </a>
-                        <% } %>
-                    <% } %>
-                </li>
-            <% }) %>    
-        </ul>
-    </section>
-    <script src="script.js"></script>
+                            <% if (taskDelete.id == task._id) { %>
+                                <a class="botoes" href="/deleteOne/<%= taskDelete._id%>"> <i class="bi bi-check2"></i> </a>
+                                <a class="botoes" href="/"> <i class="bi bi-x-lg"></i> </a>
+                            <% } else { %>
+                                <a class="botoes" href="/getById/<%= task._id%>/update"> <i class="bi bi-pencil"></i> </a>
+                                <a class="botoes" href="/getById/<%= task._id%>/delete"> <i class="bi bi-x-lg"></i> </a>
+                            <% } %>
+                        <% } %>   
+                    </div>
+                </div>
+            <% }) %> 
+        </div>
+    </main>
+    <script src="/script.js"></script>
 </body>
 </html>

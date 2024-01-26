@@ -1,3 +1,130 @@
-h1 {
-    color: red;
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    color: black;
+    font-family: 'Prompt', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}  */
+
+/* --------------------------------------- */
+
+body {
+    background-color: #000;
+
+    padding-right: 35%;
+	padding-left: 35%;
+}
+
+main {
+    padding-top: 20%;
+    padding-bottom: 10%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    border: none;
+
+    background-color: #000;
+    color: white;
+
+    width: calc(94% - 4px);
+    padding: 3%;
+
+    border: 2px solid white;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    border: 2px solid white;
+    outline: 0;
+}
+
+button {
+    visibility: hidden;
+    height: 1px;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.task {
+    background-color: white;
+
+    width: 94%;
+    padding: 3%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nome_task {
+    overflow-x: auto; 
+}
+
+.nome_task::-webkit-scrollbar {
+    height: 4px;
+}
+
+.nome_task::-webkit-scrollbar-track {
+	background-color: #000000;
+}
+
+.nome_task::-webkit-scrollbar-thumb{
+	background-color: #ffffff;
+}
+
+.data_task{
+    font-size: 7px;
+}
+
+.container_text_task {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    width: 89%;
+}
+
+.container_botoes_task {
+    display: flex;
+    gap: 8px;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #000;
 }
