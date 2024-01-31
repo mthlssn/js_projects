@@ -76,5 +76,5 @@ Para testar o projeto real em sua máquina siga o tutorial:
    npm run dev
    ```
 
-   Abra seu navegador e entre no [link](http://localhost:3000/)
+   Abra seu navegador e entre no [link](http://localhost:3000/).
 
