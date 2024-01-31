@@ -1,6 +1,8 @@
 # js_projects
 Todos esses projetos foram criados utilizando javascript.
 
+<br>
+
 ## Calculator
 
 ![Screenshot da calculadora](images/calculator.png)
@@ -11,9 +13,9 @@ Uma calculadora web que realiza as 4 operações básicas.
 
 ### Como usar?
 
-Acesse o site: mthlssn.github.io/js_projects/
+Acesse o [site](mthlssn.github.io/js_projects/)
 
----
+<br>
 
 ## Map Generator
 
@@ -25,10 +27,9 @@ Um gerador aleatório de mapas que permite o download da imagem gerada.
 
 ### Como usar?
 
-Acesse o site: mthlssn.github.io/js_projects/
+Acesse o [site](mthlssn.github.io/js_projects/).
 
----
-
+<br>
 
 ## Task List
 
@@ -36,13 +37,13 @@ Acesse o site: mthlssn.github.io/js_projects/
 
 ### O quê é?
 
-Uma lista de tarefas online que segue todo padrão de criação de um projeto node. Video do projeto funcionando em localhost: youtu.be/Qy_VtRfyFpg
+Uma lista de tarefas online que segue todo padrão de criação de um projeto node. Video do projeto funcionando em localhost: [link](youtu.be/Qy_VtRfyFpg)
 
 ### Como usar?
 
-Acesse o site (versão sem banco de dados): mthlssn.github.io/js_projects/
+Acesse o [site](mthlssn.github.io/js_projects/) (versão sem banco de dados).
 
-Para testar o projeto em sua máquina siga o tutorial:
+Para testar o projeto real em sua máquina siga o tutorial:
 
 1. *Clone o repositório*:
    ```
@@ -57,7 +58,7 @@ Para testar o projeto em sua máquina siga o tutorial:
    nmp i
    ```
 
-   Caso não tenha ou conheça node, veja esse video: youtu.be/7iSylg2UvU0?si=7tSAZqGxFJRIGpxj
+   Caso não tenha ou conheça node, veja esse [video](youtu.be/7iSylg2UvU0?si=7tSAZqGxFJRIGpxj).
 
 3. *Altere .ENV*:
 
@@ -65,7 +66,7 @@ Para testar o projeto em sua máquina siga o tutorial:
 
    - PORT: 3000
 
-   - BD_URL: Para ter a URL de seu banco de dados MongoDB assista a esse vídeo: youtu.be/aJAQF-shEyM?si=jfDmaPFPSkurscVV
+   - BD_URL: Para ter a URL de seu banco de dados MongoDB assista a esse [vídeo](youtu.be/aJAQF-shEyM?si=jfDmaPFPSkurscVV).
 
 4. *Execute*:
   
@@ -75,5 +76,5 @@ Para testar o projeto em sua máquina siga o tutorial:
    npm run dev
    ```
 
-   Abra seu navegador e entre no link:  http://localhost:3000/
+   Abra seu navegador e entre no [link](http://localhost:3000/)
 
