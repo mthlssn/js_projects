@@ -41,7 +41,7 @@ Uma lista de tarefas online que segue todo padrão de criação de um projeto no
 
 ### Como usar?
 
-Acesse o [site](mthlssn.github.io/js_projects/) (versão sem banco de dados).
+Acesse o [site](https://mthlssn.github.io/js_projects/task_list/site/index.html) (versão sem banco de dados).
 
 Para testar o projeto real em sua máquina siga o tutorial:
 
