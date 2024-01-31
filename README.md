@@ -1,15 +1,79 @@
 # js_projects
+Todos esses projetos foram criados utilizando javascript.
+
+## Calculator
+
+![Screenshot da calculadora](images/calculator.png)
+
+### O quê é?
+
+Uma calculadora web que realiza as 4 operações básicas.
+
+### Como usar?
+
+Acesse o site: mthlssn.github.io/js_projects/
+
+---
+
+## Map Generator
+
+![Screenshot do gerador de mapa](images/map_generator.png)
+
+### O quê é?
+
+Um gerador aleatório de mapas que permite o download da imagem gerada.
+
+### Como usar?
+
+Acesse o site: mthlssn.github.io/js_projects/
+
+---
 
 
-### Calculator
+## Task List
 
-### Map Generator
+![Screenshot da lista de tarefas](images/task_list.png)
 
-### Spotify Api
+### O quê é?
 
-### Task List
+Uma lista de tarefas online que segue todo padrão de criação de um projeto node. Video do projeto funcionando em localhost: youtu.be/Qy_VtRfyFpg
 
-Video do projeto funcionando em localhost: https://youtu.be/Qy_VtRfyFpg
+### Como usar?
 
+Acesse o site (versão sem banco de dados): mthlssn.github.io/js_projects/
 
-Está é uma versão sem o banco de dados:
+Para testar o projeto em sua máquina siga o tutorial:
+
+1. *Clone o repositório*:
+   ```
+      git clone https://github.com/mthlssn/js_projects.git
+   ```
+
+2. *Instale as dependências*:
+
+   - Abra o terminal na pasta "task_list" e execute o seguinte comando:
+
+   ```
+   nmp i
+   ```
+
+   Caso não tenha ou conheça node, veja esse video: youtu.be/7iSylg2UvU0?si=7tSAZqGxFJRIGpxj
+
+3. *Altere .ENV*:
+
+   Na pasta do projeto, renomeou o arquivo ".env.exemple" para ".env" e preencha as variáveis.
+
+   - PORT: 3000
+
+   - BD_URL: Para ter a URL de seu banco de dados MongoDB assista a esse vídeo: youtu.be/aJAQF-shEyM?si=jfDmaPFPSkurscVV
+
+4. *Execute*:
+  
+   No terminal da pasta do projeto rode o comando:
+
+   ```
+   npm run dev
+   ```
+
+   Abra seu navegador e entre no link:  http://localhost:3000/
+
