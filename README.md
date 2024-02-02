@@ -13,7 +13,7 @@ Uma calculadora web que realiza as 4 operações básicas.
 
 ### Como usar?
 
-Acesse o [site](mthlssn.github.io/js_projects/)
+Acesse o [site](https://mthlssn.github.io/js_projects/calculator/index.html).
 
 <br>
 
@@ -27,7 +27,7 @@ Um gerador aleatório de mapas que permite o download da imagem gerada.
 
 ### Como usar?
 
-Acesse o [site](mthlssn.github.io/js_projects/).
+Acesse o [site](https://mthlssn.github.io/js_projects/map_generator/index.html).
 
 <br>
 
