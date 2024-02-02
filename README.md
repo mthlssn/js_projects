@@ -37,7 +37,7 @@ Acesse o [site](mthlssn.github.io/js_projects/).
 
 ### O quê é?
 
-Uma lista de tarefas online que segue todo padrão de criação de um projeto node. Video do projeto funcionando em localhost: [link](youtu.be/Qy_VtRfyFpg)
+Uma lista de tarefas online que segue todo padrão de criação de um projeto node. Video do projeto funcionando em localhost: [link](https://www.youtube.com/watch?v=Qy_VtRfyFpg).
 
 ### Como usar?
 
@@ -58,7 +58,7 @@ Para testar o projeto real em sua máquina siga o tutorial:
    nmp i
    ```
 
-   Caso não tenha ou conheça node, veja esse [video](youtu.be/7iSylg2UvU0?si=7tSAZqGxFJRIGpxj).
+   Caso não tenha ou conheça node, veja esse [video](https://www.youtube.com/watch?v=7iSylg2UvU0).
 
 3. *Altere .ENV*:
 
@@ -66,7 +66,7 @@ Para testar o projeto real em sua máquina siga o tutorial:
 
    - PORT: 3000
 
-   - BD_URL: Para ter a URL de seu banco de dados MongoDB assista a esse [vídeo](youtu.be/aJAQF-shEyM?si=jfDmaPFPSkurscVV).
+   - BD_URL: Para ter a URL de seu banco de dados MongoDB assista a esse [vídeo](https://www.youtube.com/watch?v=aJAQF-shEyM&t=162s).
 
 4. *Execute*:
   
