@@ -1,0 +1,101 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #000;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+
+    /* box-shadow: 0px 0px 15px red inset; */
+
+    color: white;
+}
+
+
+/* ================= JOGO ================== */
+
+.jogo {
+    background-color: #fff;
+
+    width: 426px;
+    height: 426px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.linha {
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.coluna {
+    background-color: #000;
+
+    width: 140px;
+    height: 140px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================= PEÇAS ================== */
+
+.pecasX, .pecasO {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 60px;
+    height: 360px;
+
+    border: 2px solid black;
+}
+
+.peca {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ================= ANIMAÇÂO ================== */
+
+.piscando {
+    animation: piscar 0.75s infinite;
+}
+  
+@keyframes piscar {
+    0% {background-color: black; color: white;}
+    100% { background-color: white; color: black }
+}
+
+/* ================= CELULAR ================== */
+
+@media screen and (max-width: 760px) {
+    body {
+        flex-direction: column;
+    }
+
+    .pecasX, .pecasO {
+        flex-direction: row;
+        width: 360px;
+        height: 60px;
+    }
+}

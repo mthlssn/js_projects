@@ -1,5 +1,5 @@
 const input = document.querySelector('#task');
-const divTasks = document.querySelector('#tasks')
+const divTasks = document.querySelector('#tasks');
 
 let tasks = [];
 
