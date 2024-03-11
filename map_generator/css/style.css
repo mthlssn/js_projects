@@ -56,6 +56,14 @@ h2 {
 
 /* ============================================ */
 
+input {
+    accent-color: white;
+}
+
+span {
+    color: white;
+}
+
 .buttons {
     width: 100wh;
 

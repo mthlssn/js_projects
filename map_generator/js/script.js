@@ -8,20 +8,17 @@ const tamanhoy = 1080;
 const width = 1;
 const height = 1;
 
-var a = 0;
-
 function gerar(){
   
   var tamanho_quadrado = 100;
 
-  // context.fillStyle = "#000"
-
-  context.clearRect(0 , 0, tamanhox, tamanhoy);
+  let quantConti = document.getElementById("continentes").value;
+  let quantPartConti = document.getElementById("parteContinente").value; 
 
   context.fillStyle = "#000";
   context.fillRect( 0, 0, tamanhox, tamanhoy);
 
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < quantConti; i++) {
 
     // tamanho aleatorio dos continentes
     let ranC_width = Math.floor(Math.random() * ((tamanhox / 3) * 2.5 - (tamanhox / 6)) + tamanhox / 6);
@@ -31,7 +28,7 @@ function gerar(){
     let ranC_posX = somaRan(20, tamanhox - ranC_width, "separar");
     let ranC_posY = somaRan(20, tamanhoy - ranC_height, "separar");
 
-    for (let i = 0; i < 250; i++) {
+    for (let i = 0; i < quantPartConti; i++) {
 
       // tamanho aleatorio das partes do continente
       let ran_tamanho = somaRan(2, tamanho_quadrado, "juntar");
@@ -83,3 +80,19 @@ function download() {
   link.click();
 
 }
+
+// mostrar value input range
+var rangeC = document.getElementById('continentes');
+var valueC = document.getElementById('spanC');
+
+rangeC.addEventListener('input', function() {
+  console.log("FDs");
+  valueC.textContent = this.value;
+});
+
+var rangePC = document.getElementById('parteContinente');
+var valuePC = document.getElementById('spanPC');
+
+rangePC.addEventListener('input', function() {
+  valuePC.textContent = this.value;
+});
