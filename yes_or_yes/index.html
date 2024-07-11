@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> yes or yes </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #00FA9A;
+        }
+
+        main {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        button {
+            background-color: white;
+            border: none;
+            padding: 3px;
+
+            border-radius: 2px;
+        }
+
+        button:hover{
+            background-color: rgb(81, 81, 81);
+            
+            border: none;
+        }
+
+        #yes {
+            position: absolute;
+            left: calc(100vw / 2 - 40px);
+            top: calc(100vh / 2 - 15px);
+        }
+
+        #no {
+            position: absolute;
+            left: calc(100vw / 2 + 15px);
+            top: calc(100vh / 2 - 15px);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <button id="yes" onclick="yes()"> YES </button>
+        <button id="no" onclick="no()"> NO </button>
+    </main>
+    <script>
+        function yes() {
+            alert("parabéns");
+        }
+
+        function no() {
+            var noo = document.getElementById("no");
+
+            console.log(noo.style.width);
+
+            noo.style.width = 200;
+        }
+    </script>
+</body>
+</html>
